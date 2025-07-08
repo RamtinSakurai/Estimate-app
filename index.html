@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>見積書作成ツール</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  
+    <div class="top">
+        <h1>見積書作成</h1>
+    </div>
+  
+    <div class="center">
+        <div id = "main" class="main"> 
+            <h1>見積書</h1>
+            <label>請求先:</label>
+            <input type="text" id="clientName" placeholder="○○株式会社"><br><br>
+            <h3>税込み合計金額：<span id="totalAmount">0円</span></h3>
+            <table id="itemTable">
+              <thead>
+                <tr>
+                  <div class="exist">
+                    <th>品目</th>
+                    <th>単価</th>
+                    <th>数量</th>
+                    <th>単位</th>
+                    <th>小計</th> 
+                  </div>
+                  
+                  
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+
+            
+                
+        </div>
+        <div class="no-print">
+            <button onclick="add()" class="add">＋ 行を追加</button><br><br>
+            <button onclick="generatePDF()" class="PDF">PDF出力</button>
+            <script src="script.js"></script>
+        </div>
+        
+    </div>
+  
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+</body>
+
+
+</html>
