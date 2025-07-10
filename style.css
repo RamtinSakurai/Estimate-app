@@ -107,7 +107,7 @@ th:nth-child(5) {
 
 
 @media print {
-    /* 既存の印刷用スタイルがここにあるので、そこに追加 */
+    
   
     .no-print {
       display: none;
@@ -115,10 +115,10 @@ th:nth-child(5) {
   
     input[type="text"],
     input[type="number"] {
-        all: unset; /* ← ブラウザのスタイルすべてリセット！ */
+        all: unset; 
         font-size: 14pt;
         color: black;
-        width: 100%;  /* 枠消しても表示が狭くならないように */
+        width: 100%; 
         display: inline-block
     }
   }
