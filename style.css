@@ -1,3 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
+footer{
+    text-align: center;
+    background-color: #acacac;
+    padding: 30px;
+    margin-top: 150px;
+}
+footer h3{
+    color: rgb(83, 82, 82);
+} 
+
 body{
     font-family: "Helvetica Neue",
     Arial,
@@ -7,18 +21,19 @@ body{
     sans-serif;
     margin:0;
     padding: 0;
-  
+
 }
 
-.top{
+header{
     margin:0;
     padding: 0;
     height: 150px;
+    width: 100%;
     background-color: rgb(52, 122, 99);
 }
 
-.top h1{
-
+header h1{
+    margin: 0;
     width: 80%;
     font-size: 45px;
     letter-spacing: 30px;
@@ -27,83 +42,134 @@ body{
     margin: 0 auto;
     padding-top:30px;
     
-    
 }
 
-
-.center{
-    width: 540px;
-    padding: 40px;
+main{
+    width:540px;
+    padding:40px 10px 10px 10px;
     margin: 0 auto;
-    background-color: rgb(168, 209, 195);
+    min-height: 700px;
+    height: auto;
+
 }
 
-table{
-    border-collapse: collapse;
-    width: 100%;
-    margin-top: 10px;
+.container-top{
+    text-align: right;
+}
+.container-top h1{
+    text-align: center;
+    padding:15px 0;
+    margin: 0;
+    letter-spacing: 40px;
+    background-color:rgb(96, 255, 157);
+}
+.container-top input{
+    text-align: center;
+    padding:0;
+    margin:0;
     
 }
+
+#criant{
+    font-size: 25px;
+    margin: 20px 0;
+    display: block;
+    width: 237px;
+}
+#place{
+    font-size: 10px;
+    display: block;
+    float:left;
+    width: 237px;
+    height: 80px;
+}
+
+
+
+.mine{
+    width:200px;
+    float: right;
+}
+.mine h3{
+    margin:0 0  10px 0;
+    background-color: rgb(48, 124, 230);
+
+}
+
+.mine p{
+    margin: 0;
+    padding: 0;
+}
+
+.container-main{
+    clear: both;
+}
+
+.container-main h2{
+
+}
+
+.exist table{
+    border-collapse: collapse;
+    width: 95%;
+    margin-top: 10px;
+     table-layout: fixed; 
+}
+
 th,td{
     border:1px solid #000000;
-    padding: 1px;
-    text-align: center;
-}
-
-td span{
-    display: inline-block;
-    min-width: 80px;
-    text-align: right;
-    font-weight: bold;
-    
+    height: 10px;
 }
 
 
 
 
-
-button{
-    margin-top:10px;
-    padding: 5px 10px;
-    background-color: #71b473;
-    color: rgb(255, 255, 255);
-    border: 1px solid  #031f04;
-    border-radius: 5px;
-    box-shadow: 0 2px #000000;
- 
+.delete-cell{
+    border: none;
 }
 
-
-
-button:hover{
-    background-color: #4CAF50;
+.item{
+    width: 45%;
 }
-button:active{
-    position: relative;
-    top: 3px;
-    box-shadow: none;
-    
+.item-prices{
+    width: 15%;
+
+}
+.amount{
+    width: 15%;
+
+}
+.subtotal{
+    width: 20%;
 }
 
-input[ type="text"],input[type="number"]{
-    width: 100%;
+.exist input{
+    padding: 0;
+    margin: 0;
     height: 100%;
-    padding: 6px 4px;
-    font-size: 10px;
-    box-sizing: border-box;
-    
+    width: 100%;
 }
 
-td:nth-child(1) { width: 200px; } 
-
-td:nth-child(5),
-th:nth-child(5) {
-  width: 100px;      
-  white-space: nowrap; 
-  text-align: right;
+.total table{
+    float: right;
+    text-align: center;
+    margin-right: 9.5%;
+    width: 48%;
+}
+.money{
+    width: 40%; 
+}
+.mono{
+    background-color: rgb(96, 255, 157) ;
 }
 
+.numbers{
+    text-align: right;
 
+}
+.cd{
+    clear: both;
+}
 
 
 @media print {
