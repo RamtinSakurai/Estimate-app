@@ -13,68 +13,70 @@
     <header>
         <h1>見積書作成</h1>
     </header>
-
-    <main id="main">
+    <div class="background">
+      <main id="main">
         <div class="print">
-            <div class="container-top">
-                <input type="text" placeholder="令和〇年〇月〇日">
-                <h1>見積書</h1>
-            </div>
-            <div class="info">
-                <textarea name="criant" rows="1" cols="20" id="criant">〇〇〇株式会社</textarea>
-                <textarea name="place"   rows="4"id="place">現場</textarea>
-                <div class="mine">
-                    <h3>Relife Compony</h3>
-                    <p>〒811-3119</p>
-                    <p>福岡県古賀市美里5-3-44</p>
-                    <p>Mail: naf1000@gmail.com</p>
-                    <p>登録番号: T6810625423353</p>
-                </div>
-            </div>
-            <div class="container-main"> 
-                <h2>税込み合計金額：<span id="maintotalAmount">0円</span></h2>
-                <div class="exist">
-                    <table id="itemTable">
-                        <thead>
-                            <tr>
-                                <th class="item">品目</th>
-                                <th class="item-prices">単価</th>
-                                <th class="amount">数量</th>
-                                <th class="subtotal">小計</th> 
-                            </tr>
-                        </thead>
-                        <tbody></tbody>
-                    </table>
-                </div>
-                <div class="total">
-                    <table>
-                        <thead>
-                            <tr>
-                                <td class="mono">10%税込み対象額</td><td class="money"><div class="numbers"><span id="nototalAmount">0円</span></div></td>
-                            </tr>
-                            <tr>
-                                <td class="mono">消費税</td><td class="money"><div class="numbers"><span id="taxAmount">0円</span></div></td>
-                            </tr>
-                            <tr>
-                                <td class="mono">合計</td><td class="money"> <div class="numbers"><span id="totalAmount">0円</span></div></td>
-                            </tr>
-                            
-                        </thead>
-                    </table>
-                </div>
-            </div>
-       
-        <div class="non-print">
-            <button onclick="add()" class="add">＋ 行を追加</button><br><br>
-           <!-- <button onclick="generatePDF()" class="PDF">PDF出力</button>
-            <div class="" id="btn1">
-                <p id="getImage" class="" onclick="downloadImage();">結果のPDF保存</p>
-            </div>
-            -->
+              <div class="container-top">
+                  <input type="text" placeholder="令和〇年〇月〇日">
+                  <h1>見積書</h1>
+              </div>
+              <div class="info">
+                  <textarea name="criant" rows="1" cols="20" id="criant">〇〇〇株式会社</textarea>
+                  <textarea name="place"   rows="4"id="place">現場</textarea>
+                  <div class="mine">
+                      <h3>Relife Company</h3>
+                      <p>〒811-3119</p>
+                      <p>福岡県古賀市美里5-3-44</p>
+                      <p>Mail: naf1000@gmail.com</p>
+                      <p>登録番号: T6810625423353</p>
+                  </div>
+              </div>
+              <div class="container-main"> 
+                  <h2>税込み合計金額：<span id="maintotalAmount">0円</span></h2>
+                  <div class="exist">
+                      <table id="itemTable">
+                          <thead>
+                              <tr>
+                                  <th class="item">品目</th>
+                                  <th class="item-prices">単価</th>
+                                  <th class="amount">数量</th>
+                                  <th class="subtotal">小計</th> 
+                              </tr>
+                          </thead>
+                          <tbody></tbody>
+                      </table>
+                  </div>
+                  <div class="total">
+                      <table>
+                          <thead>
+                              <tr>
+                                  <td class="mono">10%税込み対象額</td><td class="money"><div class="numbers"><span id="nototalAmount">0円</span></div></td>
+                              </tr>
+                              <tr>
+                                  <td class="mono">消費税</td><td class="money"><div class="numbers"><span id="taxAmount">0円</span></div></td>
+                              </tr>
+                              <tr>
+                                  <td class="mono">合計</td><td class="money"> <div class="numbers"><span id="totalAmount">0円</span></div></td>
+                              </tr>
+                              
+                          </thead>
+                      </table>
+                  </div>
+              </div>
+        
+          <div class="non-print">
+              <button onclick="add()" class="add">＋ 行を追加</button><br><br>
+            <!-- <button onclick="generatePDF()" class="PDF">PDF出力</button>
+              <div class="" id="btn1">
+                  <p id="getImage" class="" onclick="downloadImage();">結果のPDF保存</p>
+              </div>
+              -->
+          </div>
+          <div class="cb"></div>
         </div>
-       <div class="cb"></div>
+      </main>
     </div>
-    </main>
+    
     <footer>
         <h3 class="end">Mr.R</h3>
     </footer>
